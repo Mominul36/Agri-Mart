@@ -21,7 +21,7 @@ class MyClass {
     }
 
 
-    fun getCurrentTrader(onComplete: (Trader?) -> Unit) {
+    fun getCurrentFarmer(onComplete: (Trader?) -> Unit) {
         val currentUser = auth.currentUser
 
         if (currentUser != null) {
@@ -31,7 +31,7 @@ class MyClass {
             email = email.replace("@gmail.com","")
 
 
-            val traderRef: DatabaseReference = database.getReference("Trader").child(email!!)
+            val traderRef: DatabaseReference = database.getReference("Farmer").child(email!!)
 
             traderRef.addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {

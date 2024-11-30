@@ -13,24 +13,50 @@
         android:theme="@style/Theme.AgriMart"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.CropDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CropActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SeedlingDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeedlingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SeedDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddCropActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddSeedlingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddSeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MyProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.LoginActivity"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

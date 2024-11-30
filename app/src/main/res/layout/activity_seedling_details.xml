@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.SeedlingDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/home_toolbar_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seedling Details"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="30dp"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/seed"
+                    android:scaleType="centerCrop"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rice Seeds"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available in Stock"
+                    android:textColor="#0AAF42"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    >
+                    <TextView
+                        android:id="@+id/rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="৳250/"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:id="@+id/unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kg"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/star"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textColor="#494E50"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+                        android:id="@+id/minus"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/minus"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="3dp"
+                        />
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/plus"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/plus"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="3dp"
+
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adsfasdf asdfasd asd asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdasdf asd asd asdf dfad fasdf asdf asdf asdfa sdfasd fasdf asdf asdf sdf sdf asdf sdf adf adf asd asd fasd fa sd asdf asdf asdf asdf asdf asdf asdf ads fasd fads fads asd asd fasd fasd fasd fasd fa sdf asd fasd f asdf asd f asd"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                />
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/orderbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Now"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                style="@android:style/Widget.Button"
+                android:background="@drawable/button_background2"
+                android:paddingVertical="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="100dp" />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
