@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="?attr/colorPrimary">
+        android:background="@drawable/home_toolbar_background">
 
 
         <LinearLayout

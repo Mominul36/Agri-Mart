@@ -7,6 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.agrimart.Activity.CropActivity
+import com.example.agrimart.Activity.FertilizerActivity
+import com.example.agrimart.Activity.PesticideActivity
+import com.example.agrimart.Model.Fertilizer
 import com.example.agrimart.R
 import com.example.agrimart.SeedActivity
 import com.example.agrimart.SeedlingActivity
@@ -24,6 +27,14 @@ class MarketFragment : Fragment() {
     ): View? {
         binding = FragmentMarketBinding.inflate(inflater, container, false)
 
+
+        binding.fertilizer.setOnClickListener{
+            startActivity(Intent(requireContext(),FertilizerActivity::class.java))
+        }
+
+        binding.pesticide.setOnClickListener{
+            startActivity(Intent(requireContext(),PesticideActivity::class.java))
+        }
 
         binding.seed.setOnClickListener{
             startActivity(Intent(requireContext(),SeedActivity::class.java))

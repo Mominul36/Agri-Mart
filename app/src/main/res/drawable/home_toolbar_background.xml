@@ -3,17 +3,17 @@
    android:shape="rectangle"
     >
 
-<!--    <gradient-->
-<!--        android:angle="90"-->
-<!--        android:startColor="@color/base_color"-->
-<!--        android:endColor="#43D3BA"-->
-<!--        android:type="linear"-->
-<!--        />-->
-
-    <solid
-
-        android:color="@color/base_color"
+    <gradient
+        android:angle="90"
+        android:startColor="@color/base_color"
+        android:endColor="#43D3BA"
+        android:type="linear"
         />
+
+<!--    <solid-->
+
+<!--        android:color="@color/base_color"-->
+<!--        />-->
 
 
 

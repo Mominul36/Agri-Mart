@@ -235,9 +235,8 @@
                     android:textColor="@color/black"
                     style="bold"
                     android:layout_marginTop="5dp"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:clickable="false"
+
+
                     />
             </LinearLayout>
 
@@ -266,9 +265,6 @@
                     android:textColor="@color/black"
                     style="bold"
                     android:layout_marginTop="5dp"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:clickable="false"
                     />
             </LinearLayout>
 
