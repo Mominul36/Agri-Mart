@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.WheatFragment"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/wheat2"
+                android:scaleType="centerCrop"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="গম"
+                android:textSize="34sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পুষ্টি মূল্যঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গম হতে যে আটা হয় তার প্রতি ১০০ গ্রাম আটায় আমিষ ১২.১ গ্রাম, শর্করা ৬৯.৪ গ্রাম, ক্যালসিয়াম ৪৮ মিলিগ্রাম, লৌহ ১১.৫ মিলিগ্রাম, ক্যারোটিন ২৯ মাইক্রোগ্রাম, ভিটামিন বি-১ ০.৪৯ মিলিগ্রাম, ভিটামিন বি-২ ০.২৯ মিলিগ্রাম, আঁশ ১.৯ গ্রাম, খনিজ পদার্থ ২.৭ গ্রাম এবং জলীয় অংশ থাকে ১২.২ গ্রাম।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ব্যবহারঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গম সাধারণত মানুষের রুটি হিসেবে ব্যবহৃত হয়। এছাড়া গমের কুঁড়া গো-খাদ্য হিসাবে ব্যবহৃত হয়।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="উপযুক্ত জমি ও মাটিঃ "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="উঁচু ও মাঝারি দোআশ মাটি গম চাষের জন্য বেশী উপযোগী। লোনা মাটিতে গমের ফলন কম হয়।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জাত পরিচিতিঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বর্তমানে এদেশে অধিক আবাদকৃত গম জাতের মধ্যে কাঞ্চন, আকবর, অঘ্রাণী ও প্রতিভা রয়েছে। তাছাড়া সৌরভ (বারি গম-১৯) ও গৌরব (বারি গম-২০) নামে ২টি উচ্চ ফলনশীল নতুন জাত অনুমোদিত হয়েছে।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বপনের সময়ঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="গমের উচ্চ ফলনশীল জাতসমূহের বপনের উপযুক্ত সময় হল কার্তিক মাসের শেষ থেকে অগ্রহায়ণর তৃতীয় সপ্তাহ (নভেম্বর মাসের দ্বিতীয় সপ্তাহ হতে ডিসেম্বরের প্রথম সপ্তাহ পর্যন্ত)। যে সব এলাকায় ধান কাটতে ও জমি তৈরী করতে বিলম্ব হয় সে ক্ষেত্রে কাঞ্চন,আকবর, অঘ্রাণী, প্রতিভা ও গৌরব বপন করলে ভাল ফলন পাওয়া যায়।"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বপনের পদ্ধতিঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সারিতে বা ছিটিয়ে গম বীজ বপন করা যায়। সারিতে বপনের জন্য জমি তৈরীর পর লাঙ্গল দিয়ে সরু নালা তৈরী করে ২০ সেমি দূরত্বের সারিতে ৪-৫ সেমি গভীরে বীজ বুনতে হয়। সার ব্যবস্থাপনাঃ সেচসহ চাষের ক্ষেত্রে নির্ধারিত ইউরিয়া সারের দুই তৃতীয়াংশ এবং সম্পূর্ণ টিএসপি, এমওপি ও জিপসাম শেষ চাষের পূর্বে প্রয়োগ করে মাটির সাথে মিশিয়ে দিতে হবে। বাকী এক তৃতীয়াংশ ইউরিয়া প্রথম সেচের সময় উপরি প্রয়োগ করতে হবে। সেচছাড়া চাষের ক্ষেত্রে সম্পূর্ণ সার অর্থাৎ ইউরিয়া, টিএসপি, এমওপি ও জিপসাম শেষ চাষের সময় জমিতে প্রয়োগ করতে হবে। গম চাষে নীচে উল্লেখিত হারে সার ব্যবহার করা প্রয়োজন।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সেচ ও আগাছা ব্যবস্থাপনাঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মাটির প্রকার ভেদে সাধারণত ২-৩টি সেচের প্রয়োজন হয়। প্রথম সেচ চারার তিন পাতার সময় (বপনের ১৭-২১ দিন পরে), দ্বিতীয় সেচ গমের শীষ বের হওয়ার সময়। (বপনের ৫৫-৬০ দিন পর) এবং তৃতীয় সেচ দানা গঠনের সময় (বপনের ৭৫-৮০ দিন পর) দিতে হবে। জমিতে আগাছা দেখা দিলে সাথে সাথে আগাছা দমনের ব্যবস্থা নিতে হবে।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" • প্রথম সেচ: বীজ বপনের ১৫-২০ দিনের মধ্যে (৪-৬ পাতা পর্যায়)\n•
+দ্বিতীয় সেচ: বীজ বপনের ৩০-৩৫ দিনের মধ্যে (৮-১২ পাতা পর্যায়)\n•
+তৃতীয় সেচ: বীজ বপনের ৬০-৭০ দিনের মধ্যে (মোচা বের হওয়া পর্যায়)\n•
+চতুর্থ সেচ: বীজ বপনের ৮৫-৯৫ দিনের মধ্যে (দানা বাঁধার পূর্ব পর্যায়)"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ফসল সংগ্রহঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="চৈত্র মাসের প্রথম থেকে মধ্য-চৈত্র (মার্চের শেষ থেকে এপ্রিলের প্রথম) পর্যন্ত কেটে গম সংগ্রহ করতে হয়।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

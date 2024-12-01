@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MaizeFragment"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/maize"
+                android:scaleType="centerCrop"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ভুট্টা"
+                android:textSize="34sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পুষ্টি মূল্যঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পধান ও গমের তুলনায় ভুট্টার পুষ্টিমান বেশী। এতে প্রায় ১১% আমিষ জাতীয় উপাদান রয়েছে। আমিষে প্রয়োজনীয় এ্যামিনো এসিড, ট্রিপটোফ্যান ও লাইসিন অধিক পরিমানে আছে। এছাড়া হলদে রংয়ের ভুট্টা দানায় প্রতি ১০০ গ্রামে প্রায় ৯০ মিলিগ্রাম ক্যারোটিন বা ভিটামিন এ থাকে।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ব্যবহারঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ভুট্টার দানা মানুষের খাদ্য হিসেবে এবং ভুট্টার গাছ ও সবুজ পাতা উন্নত মানের গোখাদ্য হিসেবে ব্যবহৃত হয়। হাঁস-মুরগি ও মাছের খাদ্য হিসেবেও এর যথেষ্ট গুরূত্ব রয়েছ। শুধু পশু, মুরগির খামার ও মাছের চাহিদা মিটানোর জন্যই বছরে প্রায় ২ লক্ষ ৭০ হাজার টন ভুট্টা দানা প্রয়োজন। বাংলাদেশে ভুট্টার জমি দ্রুত বাড়ছে।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="উপযুক্ত জমি ও মাটিঃ "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বেলে দোআশ ও দোআশ মাটি ভুট্টা চাষের জন্য উপযোগী। লক্ষ্য রাখতে হবে যেন জমিতে পানি জমে না থাকে।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জাত পরিচিতিঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ভুট্টার জাত সংগ্রহ ও বাছাই করনের মাধ্যমে বিএআরআই আজ পর্যন্ত বেশ কয়েকটি উন্নত জাত উদ্ভাবন করেছে বাংলাদেশের ক্রমবর্ধমান চাহিদা মিটাতে বহুমুখী ব্যবহারের উপযোগী ভুট্টা জাতের চাষের সম্ভবনা খুবই উজ্জ্বল।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বপনের সময়ঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বাংলাদেশে রবি মৌসুমে মধ্য-আশ্বিন থেকে মধ্য অগ্রহায়ণ (অক্টোবর-নভেম্বর) এবং খরিফ মৌসুমে ফাল্গুন থেকে মধ্য-চৈত্র (মধ্য ফেব্রুয়ারী-মার্চ) পর্যন্ত সময় বীজ বপনের উপযুক্ত সময়।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সার প্রয়োগ পদ্ধতিঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জমি তৈরীর শেষ পর্যায়ে অনুমোদিত ইউরিয়ার এক তৃতীয়াংশ এবং অন্যান্য সারের সবটুকু ছিটিয়ে জমি চাষ দিতে হবে। বাকি ইউরয়া সমান ২ কিস্তিতে প্রয়োগ করতে হবে। প্রথম কিস্তি বীজ গজানোর ২৫-৩০ দিন পর এবং দ্বিতীয় কিস্তি বীজ গজানোর ৪০-৫০ দিন পর উপরি প্রয়োগ করতে হবে। "
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সেচ ও আগাছা ব্যবস্থাপনাঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="উচ্চ ফলনশীল জাতের ভুট্টার আশানুরূপ ফলন পেতে হলে রবি মৌসুমে সেচ প্রয়োগ অত্যাবশ্যক। উদ্ভাবিত জাতে নিম্নরূপ ৩-৪টি সেচ দেওয়া যায়।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" • প্রথম সেচ: বীজ বপনের ১৫-২০ দিনের মধ্যে (৪-৬ পাতা পর্যায়)\n•
+দ্বিতীয় সেচ: বীজ বপনের ৩০-৩৫ দিনের মধ্যে (৮-১২ পাতা পর্যায়)\n•
+তৃতীয় সেচ: বীজ বপনের ৬০-৭০ দিনের মধ্যে (মোচা বের হওয়া পর্যায়)\n•
+চতুর্থ সেচ: বীজ বপনের ৮৫-৯৫ দিনের মধ্যে (দানা বাঁধার পূর্ব পর্যায়)"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ফসল সংগ্রহঃ"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="দানার জন্য ভুট্টা সংগ্রহের ক্ষেত্রে মোচা চক্‌চক্‌ খড়ের রং ধারণ করলে এবং পাতা কিছুটা হলদে হলে সংগ্রহের উপযুক্ত হয়। এ অবস্থায় মোচা থেকে ছড়ানো বীজের গোড়ায় কালো দাগ দেখা যাবে। ভুট্টা গাছের মোচা ৭৫-৮০% পরিপক্ক হলে ভুট্টা সংগ্রহ করা যাবে। বীজ হিসেবে মোচার মাঝামাঝি অংশ থেকে বড় ও পুষ্ট দানা সংগ্রহ করতে হবে।"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

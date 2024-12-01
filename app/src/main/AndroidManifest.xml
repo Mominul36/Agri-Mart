@@ -13,6 +13,21 @@
         android:theme="@style/Theme.AgriMart"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.HireWorkerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DiseaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WeatherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MachineryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CultivationPrcessActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.MessageActivity"
             android:exported="false" />
         <activity
