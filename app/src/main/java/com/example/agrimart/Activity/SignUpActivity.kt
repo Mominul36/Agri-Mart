@@ -224,7 +224,7 @@ class SignUpActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
 
                     val farmerId = phone
-                    val farmer = Farmer(farmerId, name, phone, "", password, "0",division,district,thana)
+                    val farmer = Farmer(farmerId, name, phone, "", password, "0",division,district,thana,"",false)
 
                     if (farmerId != null) {
                         database.child(farmerId).setValue(farmer)

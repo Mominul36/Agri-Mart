@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/bname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            />
+
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close"
+                android:layout_centerVertical="true"
+                />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/bphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/bchat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_chat2"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="3dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/bcall"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_call2"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/alert_layout_background"
+        android:padding="20dp"
+        android:layout_marginBottom="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/alert"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay Alert: Avoide Online Scams"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• This app connects buyers and sellers but doesn’t handle payments. All transactions are manual. Verify offer details and user credibility. Avoid sharing personal info. Stay cautious, communicate clearly, and ensure safe deals!"
+            android:textSize="16sp"
+            android:textColor="#303335"
+            android:layout_centerVertical="true"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="6dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See all safety tips"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#03A9F4"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

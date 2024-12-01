@@ -58,7 +58,7 @@
 
     <!-- Crop Care item -->
     <LinearLayout
-        android:id="@+id/nav_crop_care"
+        android:id="@+id/nav_service"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1.1"
@@ -76,7 +76,7 @@
             android:id="@+id/txt_crop_care"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Crop Care"
+            android:text="Service"
             android:textSize="12sp"
             android:textColor="@color/black"
             android:gravity="center"
@@ -85,7 +85,7 @@
 
     <!-- Advisor item -->
     <LinearLayout
-        android:id="@+id/nav_advisor"
+        android:id="@+id/nav_message"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -103,7 +103,7 @@
             android:id="@+id/txt_advisor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Advise"
+            android:text="Message"
             android:textSize="12sp"
             android:textColor="@color/black" />
     </LinearLayout>

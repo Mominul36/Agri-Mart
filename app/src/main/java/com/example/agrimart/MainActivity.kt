@@ -19,6 +19,9 @@ import com.example.agrimart.Activity.MyProductActivity
 import com.example.agrimart.Class.MyClass
 import com.example.agrimart.Fragments.HomeFragment
 import com.example.agrimart.Fragments.MarketFragment
+import com.example.agrimart.Fragments.MessageFragment
+import com.example.agrimart.Fragments.ProfileFragment
+import com.example.agrimart.Fragments.ServiceFragment
 import com.example.agrimart.Model.Farmer
 import com.example.agrimart.databinding.ActivityMainBinding
 import com.example.agrimarttrader.Class.ControlImage
@@ -28,8 +31,8 @@ import com.google.firebase.auth.FirebaseAuth
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     lateinit var navHome: LinearLayout
     lateinit var navMarket: LinearLayout
-    lateinit var navCropCare: LinearLayout
-    lateinit var navAdvisor: LinearLayout
+    lateinit var navService: LinearLayout
+    lateinit var navMessage: LinearLayout
     lateinit var navProfile: LinearLayout
 
     lateinit var iconHome: ImageView
@@ -54,10 +57,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var fragment = intent.getStringExtra("fragment")
+
         auth = FirebaseAuth.getInstance()
         initVariable()
-        setFragment(HomeFragment())
+
         setNavigationItemColor(navHome)
+
+        if(fragment=="home"){
+            setFragment(HomeFragment())
+        }else if(fragment=="profile"){
+            setFragment(ProfileFragment())
+        }
+
+
 
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
@@ -89,16 +102,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             setFragment(MarketFragment())
         }
 
-        navCropCare.setOnClickListener {
-            setNavigationItemColor(navCropCare)
+        navService.setOnClickListener {
+            setNavigationItemColor(navService)
+            setFragment(ServiceFragment())
         }
 
-        navAdvisor.setOnClickListener {
-            setNavigationItemColor(navAdvisor)
+        navMessage.setOnClickListener {
+            setNavigationItemColor(navMessage)
+            setFragment(MessageFragment())
         }
 
         navProfile.setOnClickListener {
             setNavigationItemColor(navProfile)
+            setFragment(ProfileFragment())
         }
 
 
@@ -152,8 +168,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // LinearLayout items
         navHome = findViewById(R.id.nav_home)
         navMarket = findViewById(R.id.nav_market)
-        navCropCare = findViewById(R.id.nav_crop_care)
-        navAdvisor = findViewById(R.id.nav_advisor)
+        navService = findViewById(R.id.nav_service)
+        navMessage = findViewById(R.id.nav_message)
         navProfile = findViewById(R.id.nav_profile)
 
 // ImageView items
@@ -189,11 +205,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 txtMarket.setTextColor(ContextCompat.getColor(this, R.color.base_color))
                 iconMarket.setImageResource(R.drawable.cart2)
             }
-            navCropCare -> {
+            navService -> {
                 txtCropCare.setTextColor(ContextCompat.getColor(this, R.color.base_color))
                 iconCropCare.setImageResource(R.drawable.crop_care2)
             }
-            navAdvisor -> {
+            navMessage -> {
                 txtAdvisor.setTextColor(ContextCompat.getColor(this, R.color.base_color))
                 iconAdvisor.setImageResource(R.drawable.message2)
             }
@@ -224,10 +240,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onBackPressed() {
+        super.onBackPressed()
         if (binding.drawerlayout.isDrawerOpen(GravityCompat.END)) {
             binding.drawerlayout.closeDrawer(GravityCompat.END)
         } else {
-            super.onBackPressed()
+            finish()
         }
     }
 

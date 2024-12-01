@@ -10,5 +10,7 @@ class Farmer(
     var division: String? = null,
     var district: String? = null,
     var thana: String? = null,
+    var elocation: String?=null,
+    var worker: Boolean?=null
 ) {
 }

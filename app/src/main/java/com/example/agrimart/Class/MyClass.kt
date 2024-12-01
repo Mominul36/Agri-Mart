@@ -1,5 +1,6 @@
 package com.example.agrimart.Class
 
+import com.example.agrimart.Model.Farmer
 import com.example.agrimart.Model.Trader
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -21,7 +22,7 @@ class MyClass {
     }
 
 
-    fun getCurrentFarmer(onComplete: (Trader?) -> Unit) {
+    fun getCurrentFarmer(onComplete: (Farmer?) -> Unit) {
         val currentUser = auth.currentUser
 
         if (currentUser != null) {
@@ -36,8 +37,8 @@ class MyClass {
             traderRef.addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     if(snapshot!=null){
-                        val trader = snapshot.getValue(Trader::class.java)
-                        onComplete(trader)
+                        val farmer = snapshot.getValue(Farmer::class.java)
+                        onComplete(farmer)
                     }
                 }
                 override fun onCancelled(error: DatabaseError) {

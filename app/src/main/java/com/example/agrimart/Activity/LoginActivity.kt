@@ -22,7 +22,9 @@ class LoginActivity : AppCompatActivity() {
 
         var user = auth.currentUser
         if(user!=null){
-            startActivity(Intent(this, MainActivity::class.java))
+            var intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("fragment", "home")
+            startActivity(intent)
             finish()
         }
 
@@ -63,7 +65,9 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, MainActivity::class.java))
+                    var intent = Intent(this, MainActivity::class.java)
+                    intent.putExtra("fragment", "home")
+                    startActivity(intent)
                     finish()
                 } else {
                     Toast.makeText(this, "Authentication failed: ${task.exception?.message}", Toast.LENGTH_LONG).show()

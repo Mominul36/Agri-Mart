@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginHorizontal="30dp"
+            android:layout_marginHorizontal="20dp"
             >
 
 
@@ -216,20 +216,71 @@
 
 
 
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/orderbtn"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Order Now"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                style="@android:style/Widget.Button"
-                android:background="@drawable/button_background2"
-                android:paddingVertical="15dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="100dp" />
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/call"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_call"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_chat"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chat"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
 
 
 
