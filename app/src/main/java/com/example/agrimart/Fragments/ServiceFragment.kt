@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.agrimart.Activity.CultivationPrcessActivity
+import com.example.agrimart.Activity.DiseaseActivity
 import com.example.agrimart.Activity.WeatherActivity
 import com.example.agrimart.Activity.WorkerActivity
 import com.example.agrimart.R
@@ -25,6 +26,10 @@ class ServiceFragment : Fragment() {
         binding.cultivation.setOnClickListener{
             startActivity(Intent(requireContext(),CultivationPrcessActivity::class.java))
         }
+        binding.disease.setOnClickListener{
+            startActivity(Intent(requireContext(),DiseaseActivity::class.java))
+        }
+
 
 
         binding.weather.setOnClickListener{
